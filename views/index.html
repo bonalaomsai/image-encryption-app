@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Encryption Tool</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Encryption Tool</h1>
+
+        <section>
+            <h2>Encrypt Image</h2>
+            <form id="encrypt-form" action="/encrypt" method="post" enctype="multipart/form-data">
+                <label for="image">Choose an image:</label>
+                <input type="file" name="image" required>
+                <label for="password">Enter password:</label>
+                <input type="password" name="password" required>
+                <button type="submit">Encrypt Image</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Decrypt Image</h2>
+            <form id="decrypt-form" action="/decrypt" method="post" enctype="multipart/form-data">
+                <label for="image">Choose an encrypted image:</label>
+                <input type="file" name="image" required>
+                <label for="password">Enter password:</label>
+                <input type="password" name="password" required>
+                <button type="submit">Decrypt Image</button>
+            </form>
+        </section>
+    </div>
+
+   
+
+    <script src="/js/scripts.js"></script>
+</body>
+</html>
